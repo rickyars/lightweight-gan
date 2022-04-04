@@ -573,7 +573,7 @@ class Generator(nn.Module):
                     upsample(),
                     Blur(),
                     Conv2dSame(chan_in, chan_out * 2, 4),
-                    Noise(),
+                    #Noise(),
                     norm_class(chan_out * 2),
                     nn.GLU(dim = 1)
                 ),
